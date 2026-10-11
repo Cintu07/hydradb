@@ -35,7 +35,7 @@
 //! unavailable it returns `None` and callers fall through to kernel 1 (see
 //! `shard::query`, counted by `query_rust_sparse_fallbacks`) — which is a
 //! capability downgrade, not merely a slower path: counts must be answered by
-//! materialising the full vertex set and trimming afterwards.
+//! materialising the full vertex set and counting it.
 //!
 //! # Cost model
 //!
